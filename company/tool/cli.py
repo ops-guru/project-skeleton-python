@@ -8,7 +8,7 @@ import os
 import sys
 import argparse
 
-from company.tool.shared import item
+from company.tool.shared import thing
 
 
 def parse_args(args=None):
@@ -16,12 +16,12 @@ def parse_args(args=None):
         description="Tool to do something"
     )
     parser.add_argument(
-        'param_integer',
+        'iparam',
         type=int,
-        help="param_integer to use"
+        help="iparam to use"
     )
     parser.add_argument(
-        'param_str',
+        'sparam',
         help="string param to use"
     )
     parser.add_argument(
@@ -36,8 +36,8 @@ def parse_args(args=None):
 
 def main():
     params = parse_args(sys.argv[1:])
-    item.shared_function(params.param_integer)
-    item.shared_function(params.param_str)
+    thing.shared_function(params.iparam)
+    thing.shared_function(params.sparam)
     return 0
 
 
