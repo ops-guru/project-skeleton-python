@@ -1,6 +1,6 @@
 import pytest
 
-from company.tool import cli
+from company_tool import cli
 
 
 def test_parse_argv():

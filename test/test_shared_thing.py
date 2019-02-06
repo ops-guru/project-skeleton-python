@@ -1,6 +1,6 @@
 import pytest
 
-from company.tool.shared import thing
+from company_tool.shared import thing
 
 
 def test_shared_function():

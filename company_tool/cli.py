@@ -8,7 +8,7 @@ import os
 import sys
 import argparse
 
-from company.tool.shared import thing
+from company_tool.shared import thing
 
 
 def parse_args(args=None):
